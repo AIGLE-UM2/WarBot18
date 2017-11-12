@@ -22,7 +22,7 @@ public abstract class WarExplorerBrainController extends WarExplorerBrain {
 
         if (isBlocked()) {                   //isBlocked () : Boolean =>Retourne vrai si l’agent est bloqué contre un bord, faux sinon.
             setRandomHeading();            //Change aléatoirement la trajectoire de l’agent.
-            return WarExplorer.ACTION_MOVE;    // -----------------------------------------------------???
+            return WarExplorer.ACTION_MOVE;    
         }
         
         List<WarAgentPercept> percepts = getPercepts();
