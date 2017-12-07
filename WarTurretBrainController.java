@@ -38,6 +38,45 @@ public abstract class WarTurretBrainController extends WarTurretBrain {
                             return WarTurret.ACTION_RELOAD;
                     }
                     break;
+                    
+                    
+                case WarHeavy:
+                    if (isEnemy(p)) {
+                        setHeading(p.getAngle());
+                        if (isReloaded()) {
+                            return WarTurret.ACTION_FIRE;
+                        } else
+                            return WarTurret.ACTION_RELOAD;
+                    }
+                    break;
+                case WarLight:
+                    if (isEnemy(p)) {
+                        setHeading(p.getAngle());
+                        if (isReloaded()) {
+                            return WarTurret.ACTION_FIRE;
+                        } else
+                            return WarTurret.ACTION_RELOAD;
+                    }
+                    break;
+                case WarExplorer:
+                    if (isEnemy(p)) {
+                        setHeading(p.getAngle());
+                        if (isReloaded()) {
+                            return WarTurret.ACTION_FIRE;
+                        } else
+                            return WarTurret.ACTION_RELOAD;
+                    }
+                    break;
+                    
+                case WarKamikaze:
+                    if (isEnemy(p)) {
+                        setHeading(p.getAngle());
+                        if (isReloaded()) {
+                            return WarTurret.ACTION_FIRE;
+                        } else
+                            return WarTurret.ACTION_RELOAD;
+                    }
+                    break;
                 default:
                     break;
             }
